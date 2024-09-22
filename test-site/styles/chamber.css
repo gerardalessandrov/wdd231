@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Sansita", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  width: 1000px;
+}
+
+header {
+  background: #090446;
+}
+
+h1 {
+  color: white;
+  font-family: "Sansita", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  text-align: center;
+}
+
+nav a:hover {
+  text-decoration: overline;
+}
+
+.navigation {
+  font-family: "Sansita", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  background: black;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 10px 200px 200px 290px 30px;
+  grid-template-rows: 30px 50px 50px 50px 350px;
+  max-width: 1000px;
+  position: initial;
+}
+.course-navigation {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.cuadro {
+  background-color: #090446;
+  color: white;
+}
+.cuadro-course {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  list-style: none;
+}
+.cuadro {
+  padding: 25px;
+}
+.background {
+  background-color: cadetblue;
+  margin: 0;
+  padding: 10px;
+}
+.card1 {
+  grid-row: 2/6;
+  grid-column: 2/5;
+  background: #eff2f1;
+  border: black 1px solid;
+}
+
+h2 {
+  border: black 1px solid;
+  height: 50px;
+  margin: 0;
+  border-radius: 3px;
+  background: #090446;
+  color: white;
+  text-align: center;
+  font-family: "Sansita", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+img.img1 {
+  float: right;
+  margin-right: 25px;
+  margin-top: -120px;
+}
+
+img.img2 {
+  float: right;
+  margin-right: 25px;
+  margin-top: -150px;
+}
+
+.contenedor {
+  width: 400px;
+  margin-left: 30px;
+}
+
+.contenedor2 {
+  text-align: center;
+}
+
+.card2 {
+  grid-row: 2/6;
+  grid-column: 6/7;
+  border: black 1px solid;
+}
+.card3 {
+  grid-row: 6/8;
+  grid-column: 2/7;
+}
+.contenedor3 {
+  margin-top: 150px;
+  margin-left: 30px;
+}
+
+footer {
+  background: #bfd1e5;
+  margin-top: 10px;
+  height: 70px;
+  text-align: center;
+}
+
+.color p {
+  margin: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0.75rem;
+  background-color: #eee;
+}
+
+.highlight {
+  color: navy;
+  font-weight: 700;
+  font-family: hebrew;
+}
