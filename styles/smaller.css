@@ -46,12 +46,11 @@
     text-decoration: none;
     display: block;
     list-style: none;
-    font-size: 0.5rem 0.75rem;
+    font-size: 0.75rem;
   }
   .navigation {
     list-style: none;
     margin: 10px auto;
-    max-width: auto;
     text-align: center;
   }
   .navigation li {
