@@ -38,6 +38,9 @@ h1 {
 .navigation a {
   display: block;
   padding: 0.75rem;
+  background-color: black;
+  color: white;
+  list-style: none;
 }
 a {
   color: #474044;
