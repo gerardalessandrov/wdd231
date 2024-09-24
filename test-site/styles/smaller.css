@@ -1,0 +1,19 @@
+body {
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+  width: 1000px;
+  padding: 0;
+}
+header {
+  background: #474044;
+}
+h1 {
+  color: whitesmoke;
+  font-size: larger;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.gerard {
+  display: flex;
+  padding: 10px;
+}

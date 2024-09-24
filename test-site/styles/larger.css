@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@media (min-width: 500px) {
+@media (min-width: 600px) {
+  @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap");
   body {
-    font-family: "Sansita", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+    font-family: "Gowun Batang", serif;
+    font-weight: 400;
     width: 1000px;
+    padding: 0 100px 0 100px;
   }
 
   header {
-    background: #090446;
+    background: #474044;
   }
   .gerard {
     display: flex;
@@ -16,18 +16,14 @@
   }
   h1 {
     color: white;
-    font-family: "Sansita", sans-serif;
     font-weight: 100;
-    font-style: normal;
     text-align: center;
   }
 
-  nav a:hover {
-    text-decoration: overline;
+  li a:hover {
+    color: yellow;
   }
-
   .navigation {
-    font-family: "Sansita", sans-serif;
     font-weight: 100;
     font-style: normal;
     display: flex;
@@ -54,12 +50,12 @@
     list-style: none;
   }
   .cuadro {
-    background-color: #090446;
+    background-color: #5bb5c2;
     color: white;
   }
   .cuadro-course {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
     list-style: none;
   }
@@ -67,7 +63,7 @@
     padding: 25px;
   }
   .background {
-    background-color: cadetblue;
+    background-color: white;
     margin: 0;
     padding: 10px;
   }
@@ -83,10 +79,9 @@
     height: 50px;
     margin: 0;
     border-radius: 3px;
-    background: #090446;
+    background: #603c2f;
     color: white;
     text-align: center;
-    font-family: "Sansita", sans-serif;
     font-weight: 100;
     font-style: normal;
   }
@@ -127,7 +122,7 @@
   }
 
   footer {
-    background: #bfd1e5;
+    background: #474044;
     margin-top: 10px;
     height: 70px;
     text-align: center;
@@ -141,8 +136,7 @@
   }
 
   .highlight {
-    color: navy;
+    color: white;
     font-weight: 700;
-    font-family: hebrew;
   }
 }
