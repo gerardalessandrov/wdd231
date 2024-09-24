@@ -1,6 +1,6 @@
 @media (max-width: 500px) {
   body {
-    font-family: "Gowun Batang", serif;
+    font-family: "Gowun Batang", system-ui;
     font-weight: 400;
     max-width: 500px;
     padding: 0;
