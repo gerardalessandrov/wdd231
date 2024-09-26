@@ -64,6 +64,15 @@
     color: white;
     list-style: none;
   }
+  div {
+    background-color: #474044;
+    margin: 10px;
+    color: white;
+  }
+  p {
+    background-color: burlywood;
+  }
+
   .show li {
     display: block;
   }

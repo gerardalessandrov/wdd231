@@ -45,30 +45,7 @@
     max-width: 1000px;
     position: initial;
   }
-  .course-navigation {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-  }
 
-  .cuadro {
-    background-color: #5bb5c2;
-    color: white;
-  }
-  .cuadro-course {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    list-style: none;
-  }
-  .cuadro {
-    padding: 25px;
-  }
-  .background {
-    background-color: white;
-    margin: 0;
-    padding: 10px;
-  }
   .card1 {
     grid-row: 2/6;
     grid-column: 2/5;
@@ -101,7 +78,7 @@
   }
 
   .contenedor {
-    width: 400px;
+    width: 200px;
     margin-left: 30px;
   }
 
@@ -114,20 +91,39 @@
     grid-column: 6/7;
     border: black 1px solid;
   }
-  .card3 {
+  .totalCredits {
     grid-row: 6/8;
     grid-column: 2/7;
   }
-  .contenedor3 {
-    margin-top: 150px;
-    margin-left: 30px;
+  .course-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
   }
 
+  .completed {
+    background-color: lightgreen; /* Style for completed courses */
+    border: 2px solid green;
+  }
+  .contenedor3 {
+    grid-row: 6/8;
+    grid-column: 2/7;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .titulo3 {
+    background-color: black;
+  }
+  #totalcredits {
+    background-color: #474044;
+  }
   footer {
     background: #474044;
     margin-top: 10px;
     height: 70px;
     text-align: center;
+    color: white;
   }
 
   .color p {

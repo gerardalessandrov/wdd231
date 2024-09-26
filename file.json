@@ -1,0 +1,13 @@
+{
+  "family-name": "Rodrigues",
+  "date": 14,
+  "numberofpeople": 7,
+  "visitedbybishoric": true,
+  "familymember": [
+    {
+      "name": "Juan",
+      "gender": "Male",
+      "birthdate": "1990-05-20"
+    }
+  ]
+}
