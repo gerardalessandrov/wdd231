@@ -97,12 +97,10 @@ function displayCourses(filter = "all") {
 
   // Display each course card
   filteredCourses.forEach((course) => {
-    
-    
     const courseCard = document.createElement("div");
 
     courseCard.className = `course-card ${course.completed ? "completed" : ""}`;
-    
+
     courseCard.innerHTML = `
    
     <h3>${course.title}</h3>
