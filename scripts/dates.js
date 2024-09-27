@@ -85,24 +85,22 @@ const courses = [
 ];
 courses[0].completed = true;
 
-function displayCourses(filter = "all") {
+function displayCourses(filteredCourses) {
   const courseList = document.getElementById("courseList");
   courseList.innerHTML = "";
 
-  // Filter courses based on type
-  const filteredCourses =
-    filter === "all"
-      ? courses
-      : courses.filter((course) => course.type === filter);
-
+  
+    
   // Display each course card
   filteredCourses.forEach((course) => {
     const courseCard = document.createElement("div");
-
     courseCard.className = `course-card ${course.completed ? "completed" : ""}`;
 
     courseCard.innerHTML = `<h3>${course.title}</h3>
-                              <p>${course.credits} credits</p>`;
+                              <p>${course.credits} credits</p>
+                              
+                              `;
+                              
     courseList.appendChild(courseCard);
   });
 
@@ -111,7 +109,19 @@ function displayCourses(filter = "all") {
     (acc, course) => acc + course.credits,
     0
   );
+ 
   const totalCreditsElement = document.getElementById("totalCredits");
   totalCreditsElement.innerText = `Total Credits: ${totalCredits}`;
 }
+document.getElementById("showAll").addEventListener("click",()=>{
+  displayCourses(courses)});
+  document.getElementById("showCSE").addEventListener("click",()=>{
+    const showcse=courses.filter(course=>course.subject==="CSE")
+    displayCourses(showcse)
+  });
+  document.getElementById("showWDD").addEventListener("click",()=>{
+    const showwdd=courses.filter(course=>course.subject==="WDD")
+    displayCourses(showwdd);
+
+})
 displayCourses();

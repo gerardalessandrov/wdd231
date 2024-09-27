@@ -93,10 +93,7 @@
     grid-column: 6/7;
     border: black 1px solid;
   }
-  .totalCredits {
-    grid-row: 6/8;
-    grid-column: 2/7;
-  }
+ 
   .course-card {
     border: 1px solid #ccc;
     padding: 10px;
@@ -111,14 +108,19 @@
   .contenedor3 {
     grid-row: 6/8;
     grid-column: 2/7;
-    margin-top: 50px;
-    margin-left: 30px;
+   
   }
   .titulo3 {
     background-color: black;
   }
-  #totalcredits {
-    background-color: #474044;
+ 
+  .active::before { 
+    content: "📍";  /* just a wayfinding symbol for the user */
+  }
+  .navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
   }
   footer {
     background: #474044;
@@ -132,14 +134,35 @@
     margin: 0.25rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem 0.75rem;
-    background-color: #eee;
+    
   }
-
+ #Credits{
+    background-color: white;
+    grid-row: 8/8;
+    grid-column: 1/7;
+    
+  }
   .highlight {
     color: white;
     font-weight: 700;
   }
   #menu {
     text-decoration: none;
+  }
+  #subject{
+    background-color: #ccc;
+    grid-row: 6/8;
+    grid-column: 1/7;
+   
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+  }
+  button{
+    width: 300px;
+    height: 60px;
+    background-color: #603c2f;
+    color: white;
+    margin-left: 30px;
   }
 }

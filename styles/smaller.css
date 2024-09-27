@@ -26,6 +26,17 @@
   #menu::before {
     content: "☰";
   }
+  #menu.show::before {
+    content: "X";
+  }
+  .active::before { 
+    content: "📍";  /* just a wayfinding symbol for the user */
+  }
+  .navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+  }
   header {
     background-color: black;
   }
@@ -42,15 +53,16 @@
   #menu {
     color: black;
     margin-top: 20px;
-    margin-left: 300px;
+    margin-left: 380px;
+    position: absolute;
     text-decoration: none;
     display: block;
     list-style: none;
-    font-size: 0.75rem;
+    font-size: 1.75rem;
   }
   .navigation {
     list-style: none;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
   }
   .navigation li {
@@ -64,10 +76,13 @@
     color: white;
     list-style: none;
   }
-  div {
+  div Credits {
     background-color: #474044;
     margin: 10px;
     color: white;
+  }
+   #courseList{
+    background-color: #bbb;
   }
 
   .show li {
