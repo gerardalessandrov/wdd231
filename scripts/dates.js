@@ -101,9 +101,7 @@ function displayCourses(filter = "all") {
 
     courseCard.className = `course-card ${course.completed ? "completed" : ""}`;
 
-    courseCard.innerHTML = `
-   
-    <h3>${course.title}</h3>
+    courseCard.innerHTML = `<h3>${course.title}</h3>
                               <p>${course.credits} credits</p>`;
     courseList.appendChild(courseCard);
   });

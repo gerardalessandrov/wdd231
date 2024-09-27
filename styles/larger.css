@@ -52,7 +52,9 @@
     background: #eff2f1;
     border: black 1px solid;
   }
-
+  #menu:hover {
+    background-color: white;
+  }
   h2 {
     border: black 1px solid;
     height: 50px;
