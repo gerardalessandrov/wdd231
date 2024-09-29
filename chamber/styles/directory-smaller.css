@@ -1,0 +1,60 @@
+@media(max-width:500px){
+body{
+    
+    font-family: "Gowun Batang", system-ui;
+    font-weight: 400;
+    
+    
+}
+nav{
+    display: flex;
+    background-color: #A51A25;
+    padding: 20px;
+}
+h3{
+    
+    color: white;
+    
+    margin-left: 150px;
+}
+img{
+    position: absolute;
+    top:20px;
+    left:20px;
+    width: 120px;
+}
+#menu::before{
+    content: " ☰";
+    
+}
+#menu.show::before {
+    content: "X";
+  }
+  .active::before { 
+    content: "📍";  /* just a wayfinding symbol for the user */
+  }
+#menu{
+    font-size: 1.45rem;
+    position: absolute;
+    right:20px;
+    top:25px;
+   
+}
+.navigation li{
+    display: none;
+}
+.show li{
+    display: block;
+}
+.navigation a {
+    display: block;
+    padding: 2.3rem;
+    margin: 0;
+    background-color:#A51A25 ;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    
+  }
+ 
+}
