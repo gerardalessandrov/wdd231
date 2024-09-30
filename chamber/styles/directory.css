@@ -19,7 +19,9 @@ header{
 h3{
     margin-left: 150px;
 }
-
+p{
+    color: black;
+}
 
 img{
     position: absolute;
@@ -47,20 +49,12 @@ li {
     display: none;
 }
 .container{
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 40px 400px 400px 400px;
-    
-
+    display: flex;
 }
 .card{
-    background-color: white;
-    display: flex; /* Activa flexbox */
-    flex-direction: row; /* Orientación horizontal */
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Centrar verticalmente */
-    padding: 20px;
-    margin: 40px;
+    background-color:#A51A25;
+    width:200px;
+   
 }
 .card img{
     margin-top:150px;
