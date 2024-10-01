@@ -3,6 +3,7 @@ body{
     
     font-family: "Gowun Batang", system-ui;
     font-weight: 400;
+    border-sizing:border-box;
     
     
 }
@@ -11,18 +12,12 @@ nav{
     background-color: #A51A25;
     padding: 20px;
 }
-h3{
+.title{
     
     color: white;
-    
-    margin-left: 150px;
+   
 }
-img{
-    position: absolute;
-    top:20px;
-    left:20px;
-    width: 120px;
-}
+
 #menu::before{
     content: " ☰";
     
@@ -56,5 +51,23 @@ img{
     text-align: center;
     
   }
- 
+  #card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .tarjeta{
+    background-color:  #ECF0F1;
+    padding: 20px;
+    flex: 0 1 calc(33.33% - 10px);
+    margin: 10px;
+  }
+  footer {
+    background: #474044;
+    margin-top: 10px;
+    height: 70px;
+    text-align: center;
+    color: white;
+  }
+
 }

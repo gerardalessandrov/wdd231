@@ -16,7 +16,7 @@ header{
     text-align: center;
    
 }
-h3{
+.title{
     margin-left: 150px;
 }
 p{
@@ -33,7 +33,7 @@ p{
 .tarjeta{
    background-color:  #ECF0F1;
    
-   width:400px;
+   width:300px;
    border-radius: 30px;   
    flex: 0 1 calc(33.33% - 10px); /* Establece el ancho de cada div, restando el espacio */
    box-sizing: border-box;       /* Asegura que el padding y el borde estén incluidos en el ancho */
@@ -73,6 +73,13 @@ li {
 .card img{
     margin-top:150px;
 }
+footer {
+    background: #474044;
+    margin-top: 10px;
+    height: 70px;
+    text-align: center;
+    color: white;
+  }
 
 
 }
