@@ -23,12 +23,25 @@ p{
     color: black;
 }
 
-img{
-    position: absolute;
-    top:20px;
-    left:20px;
-    width: 120px;
+#card{
+   background-color: #FAF2A1;
+   display:flex;
+   flex-wrap: wrap; 
+   justify-content: space-between;
+   gap: 10px;        
 }
+.tarjeta{
+   background-color:  #ECF0F1;
+   
+   width:400px;
+   border-radius: 30px;   
+   flex: 0 1 calc(33.33% - 10px); /* Establece el ancho de cada div, restando el espacio */
+   box-sizing: border-box;       /* Asegura que el padding y el borde estén incluidos en el ancho */
+   padding: 20px;                /* Espaciado interno */
+   border: 1px solid #ccc;       /* Solo para visualización */
+   text-align: center;  
+}
+
 .navigation{
     display: flex;
     position: absolute;
@@ -52,6 +65,7 @@ li {
     display: flex;
 }
 .card{
+   
     background-color:#A51A25;
     width:200px;
    

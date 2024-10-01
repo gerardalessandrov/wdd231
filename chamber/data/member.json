@@ -1,61 +1,59 @@
 
-[{
-    "name":"Logo de rokys",
-    "address":"",
-    "phone-number":1234,
-    "website-URL":"",
-    "image":"https://s3-rokys-pro.s3.amazonaws.com/media/wysiwyg/1710792531_banner_400px_x_400px.jpg",
-    "membership-level": 1 
-
-},
-{
-    "name":"",
-    "address":"",
-    "phone-number":1234,
-    "website-URL":"",
-    "image":"",
-    "membership-level": 1 
-},
-{
-    "name":"",
-    "address":"",
-    "phone-number":1234,
-    "website-URL":"",
-    "image":"",
-    "membership-level": 1 
-},
-{
-    "name":"",
-    "address":"",
-    "phone-number":1234,
-    "website-URL":"",
-    "image":"",
-    "membership-level": 1 
-},
-{
-    "name":"",
-    "address":"",
-    "phone-number":1234,
-    "website-URL":"",
-    "image":"",
-    "membership-level": 1 
-},
-{
-    "name":"",
-    "address":"",
-    "phone-number":1234,
-    "website-URL":"",
-    "image":"",
-    "membership-level": 1 
-},
-{
-    "name":"",
-    "address":"",
-    "phone-number":1234,
-    "website-URL":"",
-    "image":"",
-    "membership-level": 1 
-}
-
+[
+    {
+        "name": "Pollerias Rokys",
+        "address": "Av. América Norte 2402, Trujillo 13001",
+        "phone": "231623",
+        "website": "https://rokys.com/",
+        "image": "images/rokyslogo.jpg",
+        "membershipLevel": 1 
+    },
+    {
+        "name": "China Wok",
+        "address": "Av. Universitaria 123, Lima 15000",  
+        "phone": "6128000",
+        "website": "https://www.chinawok.com.pe/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaVtexc_8Kb2aIEpSZbEh16MS1eKFLy27Cg&s",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Dulce Suspiro",
+        "address": "Leonardo Da Vinci 626, Trujillo 13001",
+        "phone": "973380586",
+        "website": "https://dulcesuspiro581306352.wordpress.com/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTiWr3PdASxRzUFS89fyXHp-xJ2Rdum5tWg&s",
+        "membershipLevel": 1 
+    },
+    {
+        "name": "Pizza Hut",
+        "address": "Av. Prol. César Vallejo 1345, Trujillo 13008",
+        "phone": "5051111",
+        "website": "https://www.pizzahut.com.pe/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvcSRSllRcc3Jd1TYO09NteqHhrXWOQ3iww&s",
+        "membershipLevel": 1 
+    },
+    {
+        "name": "Starbucks",
+        "address": "VXX2+363, Mall Aventura Plaza, Av América Oeste, Trujillo",
+        "phone": "5055000",
+        "website": "https://www.starbucks.pe/ecommerce",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2N5JgsuFclQivsYgKn2Pj57qc8MItNPdIng&s",
+        "membershipLevel": 1 
+    },
+    {
+        "name": "KFC",
+        "address": "Av. Larco 1140, Trujillo 13008",
+        "phone": "5050505",
+        "website": "https://www.kfc.com.pe/",
+        "image": "images/kfc.png",
+        "membershipLevel": 1 
+    },
+    {
+        "name": "Cineplanet",
+        "address": "Av. César Vallejo 1345, Trujillo 13008",
+        "phone": "1234",
+        "website": "https://www.cineplanet.com.pe/",
+        "image":"images/Cineplanet_logo_actual.svg",
+        "membershipLevel": 1 
+    }
 ]
-
