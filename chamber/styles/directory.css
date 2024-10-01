@@ -81,5 +81,16 @@ footer {
     color: white;
   }
 
+  #toggle-view:checked  {
+    display: block; /* Show the menu when the toggle is checked */
+    
+}
+.grid-view {
+    display: flex;
+}
 
+/* Vista en lista */
+.list-view {
+    display: block; /* Cambia a block para la vista en lista */
+}
 }

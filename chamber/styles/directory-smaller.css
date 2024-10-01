@@ -11,12 +11,9 @@ nav{
     display: flex;
     background-color: #A51A25;
     padding: 20px;
+    justify-content: center;
 }
-.title{
-    
-    color: white;
-   
-}
+
 
 #menu::before{
     content: " ☰";
@@ -32,7 +29,7 @@ nav{
     font-size: 1.45rem;
     position: absolute;
     right:20px;
-    top:25px;
+    top:15px;
    
 }
 .navigation li{
@@ -42,9 +39,9 @@ nav{
     display: block;
 }
 .navigation a {
-    display: block;
+    display: flex;
     padding: 2.3rem;
-    margin: 0;
+    flex-wrap: wrap;
     background-color:#A51A25 ;
     color: white;
     text-decoration: none;

@@ -1,6 +1,6 @@
 const mainnav = document.querySelector(".navigation");
 const hambutton = document.querySelector("#menu");
-
+const membersContainer = document.getElementById('card');
 const toggleButton = document.getElementById('toggle-view');
 let isGridView = true;
 // Maneja el clic en el botón de menú
@@ -72,11 +72,21 @@ function displayMembers(members) { // Cambié a 'displayMembers'
     });
 }
 toggleButton.addEventListener('click', () => {
-    isGridView = !isGridView;
-    membersContainer.style.display = isGridView ? 'grid' : 'block';
-    // Change display property for layout
-}
-);
+    isGridView = !isGridView; // Cambia el estado de la vista
+
+    // Cambia el estilo del contenedor basado en el estado
+    if (isGridView) {
+        membersContainer.style.display = 'grid'; // Vista en cuadrícula
+        membersContainer.style.gridTemplateColumns = 'repeat(auto-fill, minmax(300px, 1fr))';
+       
+   
+    } else {
+        membersContainer.style.display = 'flex'; // Vista en lista
+        membersContainer.style.flexDirection = 'column'; // Organiza en columnas
+        membersContainer.style.alignItems = 'center';
+    }
+});
+
 
 // Llama a fetchMembers cuando el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", fetchMembers);
