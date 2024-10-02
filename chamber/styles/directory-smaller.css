@@ -60,11 +60,18 @@ nav{
     margin: 10px;
   }
   footer {
-    background: #474044;
+    display: block;
+    
     margin-top: 10px;
     height: 70px;
     text-align: center;
-    color: white;
+    color: black;
   }
-
+  a{
+    text-decoration: none;
+    
+  }
+  ul{
+    list-style: none;
+  }
 }

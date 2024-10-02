@@ -74,16 +74,27 @@ li {
     margin-top:150px;
 }
 footer {
+    display:flex;
     background: #474044;
-    margin-top: 10px;
-    height: 70px;
+  
     text-align: center;
     color: white;
+    justify-content: space-around;
+    padding:20px;
   }
+.footer-section{
+    flex:1;
+    text-align: center;;
 
+}
   #toggle-view:checked  {
     display: block; /* Show the menu when the toggle is checked */
     
+}
+a{
+    list-style:none;
+    text-decoration: none;
+    color: white;;
 }
 .grid-view {
     display: flex;
