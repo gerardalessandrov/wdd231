@@ -104,4 +104,8 @@ a{
 .list-view {
     display: block; /* Cambia a block para la vista en lista */
 }
+.img-container{
+    background-color: aquamarine;
+}
+
 }

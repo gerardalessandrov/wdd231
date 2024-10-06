@@ -1,0 +1,8 @@
+#card{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+}
+figcaption{
+    text-transform: capitalize;
+}
