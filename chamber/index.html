@@ -3,89 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gerard-Vigo-Rodrigues">
-    <meta name="description" content="Chamber of Commerce Directory">
-    <meta property="og:title" content="My Chamber Page-from Peru">
+    <meta name="description" content="Join the Trujillo Chamber of Commerce for networking, workshops, and support for local businesses.">
+    <meta property="og:title" content="Trujillo Chamber of Commerce - Empowering Local Businesses">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpsg6LOxxNWplC3-9qZyXAlYDgfEoNtMDRmA&s ">
+    <meta property="og:image" content="https://example.com/path/to/image.jpg">
     <meta property="og:url" content="https://gerardalessandrov.github.io/wdd231/chamber/directory.html">
-    <link rel="stylesheet" href="styles/directory-smaller.css">
-    <link rel="stylesheet" href="styles/directory.css">
+    
     <link rel="stylesheet" href="styles/index.css">
+    
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
     <script src="scripts/index.js" defer></script>
-    <link rel="icon" href="images/favicon(1).ico">
 
-    <title>he Chamber of Commerce Landing/Home Page</title>
-
+    <title>Trujillo Chamber of Commerce - Empowering Local Businesses</title>
 </head>
 <body>
-  
-       
     <header>
-        <h1 class="title">Trujillo Chamber of Comerce </h1>
-         
-        <img src="images/empanadas.webp" alt="emapanadas" width="120">
-        <button id="menu">
-        </button>
+        <h1 class="title">Trujillo Chamber of Commerce</h1>
+        <img class="imagen1" src="images/empanadas.webp" alt="Delicious Peruvian empanadas" width="80" height="100">
+        <button id="menu" aria-label="Menu"></button>
         <nav>
-         <ul class="navigation">
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <li>
-                <a class="active" href="directory.html">Directory</a>
-            </li>
-            <li>
-                <a href="join.html">Join</a>
-            </li>
-            <li>
-                <a href="discover.html">Discover</a>
-            </li>
-         </ul>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
         </nav>
     </header>
- 
-     
 
- 
-<main>
-    
-    <a class="button" href="#">Join us </a>
- 
+    <main>
+        <div class="hero">
+            <img src="https://images.pexels.com/photos/1024005/pexels-photo-1024005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Trujillo Chamber of Commerce background" width="1240">
+            <div class="cta-button">
+                <h1>Welcome to Trujillo Chamber of Commerce</h1>
+                <p>We are dedicated to empowering businesses and fostering economic growth in Trujillo.</p>
+            </div>    
+            <button class="button" aria-label="Join the Chamber of Commerce">Join the Chamber of Commerce</button>    
+        </div>
 
-     <section id="weather">
-        <p id="current-event"></p>
-        <p id="temperature"></p>
-        <img id="icon" src="" alt="">
-        <p id="description"></p>
-        <div id="forecast"></div>
-     </section>
-     
-     <section id="spotlight-advertisement">
-
-     </section>
-
-</main>
- <footer >
-            <div class="footer-section">
-                <h4>Contact Us</h4>
-                <p>Trujillo Chamber of Commerce</p>
-                <p>Avenida Peru 234</p>
-                <p>Trujillo,Peru</p>
-                <p>Email: <a href="gerardinfo@trujillochamber.com">info@gauchochamber.com</a></p>
-                <p>Phone: <a href="tel:+51911234678">+51 911-234-678</a></p>
-                <p>Website: <a href="https://www.trujillochamber.com" target="_blank">www.trujillochamber.com</a></p>
+        <section class="current-events">
+            <h2>Upcoming Events</h2>
+            <div class="content-cards">
+                <div class="card">
+                    <p class="events-msg">Stay informed about our business meetups, workshops, and networking events.</p>
+                </div>
             </div>
-            <div id="currentyear" class="footer-section">
-                <h4>WDD231 CHAMBER OF COMMERCE PROJECT</h4>
-        <span class="color" id="year"></span>
-        <br>
-        <span class="color" id="short"></span>
-           </div>
-          
+
+            <div id="events" class="events-list"></div>
+            <button id="more-events" title="See More Events">See More Events</button>
+            <button id="less-events" style="display: none;" title="See Less Events">See Less Events</button>
+        </section>
+
+        <section class="business-highlight-section">
+            <h2>Business Spotlight</h2>
+            <p class="events-msg">Each month, we highlight a local business that exemplifies excellence and innovation.</p>
+            <div id="business-highlight"></div>
+            <button id="more-business-highlights" title="See More Business Highlights">See More Highlights</button>
+        </section>
+
+        <h2>Trujillo Current Weather</h2>
+        <div class="weather">
+            <p id="temperature"></p>
+            <img id="icon" src="" alt="Weather icon">
+            <p id="description"></p>
+        </div>
+        <div id="forecast"></div>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Trujillo Chamber of Commerce</p>
+            <p>Avenida Peru 234</p>
+            <p>Trujillo, Peru</p>
+            <p>Email: <a href="mailto:info@trujillochamber.com">info@trujillochamber.com</a></p>
+            <p>Phone: <a href="tel:+51911234678">+51 911-234-678</a></p>
+            <p>Website: <a href="https://www.trujillochamber.com" target="_blank">www.trujillochamber.com</a></p>
+        </div>
+        <div id="currentyear" class="footer-section">
+            <h4>WDD231 CHAMBER OF COMMERCE PROJECT</h4>
+            <span class="color" id="year"></span>
+            <br>
+            <span class="color" id="short"></span>
+        </div>
         <div class="footer-section">
             <h4>Follow Us:</h4>
             <ul class="social-links">
@@ -94,8 +99,6 @@
                 <li><a href="https://www.linkedin.com/GauchoChamberofCommerceDirectory" target="_blank">LinkedIn</a></li>
             </ul>
         </div>
-
-      </footer>
-   
+    </footer>
 </body>
 </html>

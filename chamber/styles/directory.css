@@ -1,24 +1,21 @@
 @media (min-width:500px){
     :root{
-        --background-color:#A51A25;
-        --secondary-color:#FAF2A1;
+        --background-color:#E6E49F;
+        --secondary-color:black;
         --text-color:white ;
     }
-    body{
-    font-family: "Gowun Batang", system-ui;
-    font-weight: 400;
-    }
+   
 header{
     display: flex;
-    background-color:var(--background-color) ;
-    color:var(--text-color);
+    background-color:#001F3F ;
+    color:var(--secondary-color);
     padding: 20px;
     text-align: center;
+    height: 80px;
+    
    
 }
-.title{
-    margin-left: 150px;
-}
+
 p{
     color: black;
 }
@@ -28,7 +25,7 @@ p{
    display:flex;
    flex-wrap: wrap; 
    justify-content: space-between;
-   gap: 10px;        
+   gap: 10px;     
 }
 .tarjeta{
    background-color:  #ECF0F1;
@@ -45,17 +42,24 @@ p{
 .navigation{
     display: flex;
     position: absolute;
-    right:50px;
-   flex-wrap: wrap;
-   gap:40px;
-    
+    top:5px;
+    right:0px;
+    flex-wrap: wrap;
+    gap:40px;
+
+    width: 400px;
+    height: 70px;
+    justify-content: center;
+
 }
+
 li {
     list-style: none;
-   
+    padding: 10px;
 }
+
 .navigation a{
-    color: white;
+    
     text-decoration: none;
 }
 #menu{
@@ -65,18 +69,19 @@ li {
     display: flex;
 }
 .card{
-   
     background-color:#A51A25;
     width:200px;
    
 }
-.card img{
-    margin-top:150px;
+
+.imagen1{
+    position:absolute;
+    right: 100px;
 }
+
 footer {
     display:flex;
     background: #474044;
-  
     text-align: center;
     color: white;
     justify-content: space-around;
@@ -94,7 +99,7 @@ footer {
 a{
     list-style:none;
     text-decoration: none;
-    color: white;;
+    color: white;
 }
 .grid-view {
     display: flex;

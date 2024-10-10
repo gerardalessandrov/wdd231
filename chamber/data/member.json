@@ -6,7 +6,7 @@
         "phone": "231623",
         "website": "https://rokys.com/",
         "image": "images/rokyslogo.jpg",
-        "membershipLevel": 1 
+        "membershipLevel": "Gold"
     },
     {
         "name": "China Wok",
@@ -14,7 +14,7 @@
         "phone": "6128000",
         "website": "https://www.chinawok.com.pe/",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYaVtexc_8Kb2aIEpSZbEh16MS1eKFLy27Cg&s",
-        "membershipLevel": 2
+        "membershipLevel": "Silver"
     },
     {
         "name": "Dulce Suspiro",
@@ -22,7 +22,7 @@
         "phone": "973380586",
         "website": "https://dulcesuspiro581306352.wordpress.com/",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTiWr3PdASxRzUFS89fyXHp-xJ2Rdum5tWg&s",
-        "membershipLevel": 1 
+        "membershipLevel": "Silver"
     },
     {
         "name": "Pizza Hut",
@@ -30,7 +30,7 @@
         "phone": "5051111",
         "website": "https://www.pizzahut.com.pe/",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkvcSRSllRcc3Jd1TYO09NteqHhrXWOQ3iww&s",
-        "membershipLevel": 1 
+        "membershipLevel": "Gold"
     },
     {
         "name": "Starbucks",
@@ -38,7 +38,7 @@
         "phone": "5055000",
         "website": "https://www.starbucks.pe/ecommerce",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2N5JgsuFclQivsYgKn2Pj57qc8MItNPdIng&s",
-        "membershipLevel": 1 
+        "membershipLevel": "Silver"
     },
     {
         "name": "KFC",
@@ -46,7 +46,7 @@
         "phone": "5050505",
         "website": "https://www.kfc.com.pe/",
         "image": "images/kfc.png",
-        "membershipLevel": 1 
+        "membershipLevel": "Gold"
     },
     {
         "name": "Cineplanet",
@@ -54,6 +54,6 @@
         "phone": "1234",
         "website": "https://www.cineplanet.com.pe/",
         "image":"images/Cineplanet_logo_actual.svg",
-        "membershipLevel": 1 
+        "membershipLevel": "Silver"
     }
 ]
