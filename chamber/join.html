@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="styles/join.css"></link>
+    <link rel="stylesheet" href="styles/join.css">
     <script src="scripts/join.js" defer></script>
     <meta name="description" content="Chamber of Commerce Directory">
     <meta property="og:title" content="My Chamber Page-from Peru">
@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-</head>
+
 </head>
 <body>
     <header>
@@ -45,20 +45,19 @@
 </header>
     <section class="form-container">
         <h1>Join</h1>
-        <form id="form-html" action="submit/thankyou.html method="GET">
+        <form id="form-html"action="submit/thankyou.html"method="get">
             <h2>Membership Application Form</h2>
             <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="first-name" required autocomplete="first-name" title="Ingresa tu nombre" ></input>
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" required autocomplete="last-name" title="Ingresa tu apellido" ></input>
+            <input type="text" id="first-name" name="first-name" required autocomplete="given-name" title="Ingresa tu nombre" >
+            <input type="text" id="last-name" name="last-name" required autocomplete="last-name" title="Ingresa tu apellido" >
             <label for="organizational-title">Organizational title</label>
             <input type="text" id="organizational-title" name="organizational-title" required autocomplete="organizational-title" title="Ingresa tu titulo de organizacion" pattern="^[A-Za-z\s-]{7,}$"></input>
             <label for="email-address">Email Address</label>
-            <input type="email" id="email-address" name="email-address" autocomplete="email-address" title="Ingresa tu email"></input>
+            <input type="email" id="email-address" name="email-address" autocomplete="email" title="Ingresa tu email">
             <label for="phone-number">Mobile Phone Number</label>
-            <input type="tel" id="phone-number" name="phone-number" autocomplete="phone-number" title="Ingresa tu mobile phone number" required></input>
-            <label for="organization-name">Organization Name</label>
-            <input type="text" id="organization-name" name="organization-name" autocomplete="organization" title="Ingresa tu organization-name" required></input>
+            <input type="tel" id="phone-number" name="phone-number" autocomplete="tel" title="Ingresa tu mobile phone number" required>
+            
+            <input type="text" id="organization-name" name="organization-name" autocomplete="organization-title" title="Ingresa tu organization-name" required>
             <label for="membership-level">Memebership Level</label>
             <select id="membership-level" name="membership-level">
                 <option value="See"disabled select>
@@ -79,7 +78,7 @@
                
             </select>
             <label for="organization-description">Organization Description</label>
-            <textarea id="organization-description"  title="organization-description"name="organization-description" required></textarea> 
+            <textarea id="organization-description"title="organization-description"name="organization-description" required></textarea> 
             <input type="hidden" id="timestamp" name="timestamp">
             <button type="submit">Send</button>
         </form>
