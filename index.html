@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta name="author" content="Gerard Vigo Rodrigues" >
-    <meta name="description" content="Image from Trujillo City" >
-    <meta property="og:title" content="Peru-Trujillo" >
-    <meta property="og:type" content="website" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gerard Vigo Rodrigues" />
+    <meta name="description" content="Image from Trujillo City" />
+    <meta property="og:title" content="Peru-Trujillo" />
+    <meta property="og:type" content="website" />
+
     <meta
       property="og:image"
       content="https://blog.properati.com.pe/wp-content/uploads/2022/12/trujillo-guia-ciudad-peru-properati-1128x484.jpg"
-    >
+    />
     <meta
       property="og:url"
       content="https://www.google.com/search?sca_esv=5ac10ce223656a07&sca_upv=1&rlz=1C1CHZN_enPE1095PE1095&sxsrf=ADLYWIJ8msokszVVtpdhf8JzQTbrYC85pQ:1727284334565&q=trujillo&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgacM8wnpugOpoilxhR0LwpwHiY-_SK-Sm_pc9bZ5DO8QRI3KMHDheY-0il8rt-oAqCliB2hkR-k2aqH5rCkhMhQRJbStiTZqPgyQo1dnoG7gI0mrBDQomMpTkEM6QELAqHef-qEEL4oFQOxPiNFDLnSs7u3jDnfMB63NzC2dShsfopx3J&sa=X&ved=2ahUKEwiL_r_Jy96IAxVJLrkGHZfrAsoQtKgLegQIExAB&biw=1280&bih=551&dpr=1.5#vhid=t39U7KhogRvL4M&vssid=mosaic"
-    >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/smaller.css" >
-    <link rel="stylesheet" href="styles/larger.css" >
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/smaller.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
     <script src="scripts/dates.js" defer></script>
-    
-    <link rel="icon" href="favicon.ico" >
+    <script src="scripts/dialog.js" defer></script>
+
+    <link rel="icon" href="favicon.ico" />
 
     <title>WDD 131 - Dynamic Web Fundamentals - Gerard Vigo</title>
   </head>
@@ -42,11 +47,7 @@
       <nav>
         <ul class="navigation">
           <li>
-            <a
-              href="chamber/index.html"
-              target="_blank"
-              >Home</a
-            >
+            <a href="chamber/index.html" target="_blank">Home</a>
           </li>
           <li>
             <a href="https://byui.instructure.com/." target="_blank">I-Learn</a>
@@ -55,7 +56,8 @@
             <a
               href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng"
               target="_blank"
-               class="active">Chamber</a
+              class="active"
+              >Chamber</a
             >
           </li>
           <li>
@@ -82,24 +84,28 @@
           width="270"
           alt="fotodetrujiilo"
         />
-        
-      </section>-
-     
-      
-     
-
-      <section id="courseList" class="contenedor3"> 
       </section>
-      <div id="Credits">
-      <p id="totalCredits"></p>
-      <button id="showAll">ALL</button>
-      <button id="showCSE">CSE</button>
-      <button id="showWDD">WDD</button>
-        |
-    </div>
-  
-    </main>
+      -
 
+      <section id="courseList" class="contenedor3"></section>
+      <div id="Credits">
+        <p id="totalCredits"></p>
+        <button id="showAll">ALL</button>
+        <button id="showCSE">CSE</button>
+        <button id="showWDD">WDD</button>
+      </div>
+    </main>
+    <h1>Single Button Example</h1>
+    <button id="openbutton">Open</button>
+    <dialog id="course-details">
+      <h2>hii</h2>
+      <h3></h3>
+      <p><strong></strong></p>
+      <p><strong></strong></p>
+      <p></p>
+      <p><strong></strong></p>
+      <button id="closeModal">❌</button>
+    </dialog>
     <footer id="currentyear">
       <span class="color" id="year"></span>
       <br />

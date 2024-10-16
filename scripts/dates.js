@@ -89,9 +89,6 @@ function displayCourses(filteredCourses) {
   const courseList = document.getElementById("courseList");
   courseList.innerHTML = "";
 
-  
-    
-  // Display each course card
   filteredCourses.forEach((course) => {
     const courseCard = document.createElement("div");
     courseCard.className = `course-card ${course.completed ? "completed" : ""}`;
@@ -125,3 +122,4 @@ document.getElementById("showAll").addEventListener("click",()=>{
 
 })
 displayCourses();
+

@@ -9,22 +9,22 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://example.com/path/to/image.jpg">
     <meta property="og:url" content="https://gerardalessandrov.github.io/wdd231/chamber/directory.html">
-    
-    <link rel="stylesheet" href="styles/index.css">
-    
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/index.js" defer></script>
-
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"></noscript>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js"></script>
     <title>Trujillo Chamber of Commerce - Empowering Local Businesses</title>
 </head>
 <body>
     <header>
         <h1 class="title">Trujillo Chamber of Commerce</h1>
         <img class="imagen1" src="images/empanadas.webp" alt="Delicious Peruvian empanadas" width="80" height="100">
+
         <button id="menu" aria-label="Menu"></button>
         <nav>
             <ul class="navigation">
@@ -38,7 +38,10 @@
 
     <main>
         <div class="hero">
-            <img src="https://images.pexels.com/photos/1024005/pexels-photo-1024005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Trujillo Chamber of Commerce background" width="1240">
+            <img src="https://images.pexels.com/photos/1024005/pexels-photo-1024005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                 alt="Trujillo Chamber of Commerce background" 
+                 width="1240" 
+                 loading="lazy">
             <div class="cta-button">
                 <h1>Welcome to Trujillo Chamber of Commerce</h1>
                 <p>We are dedicated to empowering businesses and fostering economic growth in Trujillo.</p>
@@ -56,20 +59,22 @@
 
             <div id="events" class="events-list"></div>
             <button id="more-events" title="See More Events">See More Events</button>
-            <button id="less-events"  title="See Less Events">See Less Events</button>
+            <button id="less-events" title="See Less Events">See Less Events</button>
         </section>
 
         <section class="business-highlight-section">
             <h2>Business Spotlight</h2>
             <p class="events-msg">Each month, we highlight a local business that exemplifies excellence and innovation.</p>
-            <div id="business-highlight"></div>
+            <div id="business-highlight">
+                
+            </div>
             <button id="more-business-highlights" title="See More Business Highlights">See More Highlights</button>
         </section>
 
         <h2>Trujillo Current Weather</h2>
         <div class="weather">
             <p id="temperature"></p>
-            <img id="icon"  alt="Weather icon">
+            <img id="icon" alt="Weather icon" loading="lazy" width="200" height="100">
             <p id="description"></p>
         </div>
         <div id="forecast"></div>
@@ -83,7 +88,7 @@
             <p>Trujillo, Peru</p>
             <p>Email: <a href="mailto:info@trujillochamber.com">info@trujillochamber.com</a></p>
             <p>Phone: <a href="tel:+51911234678">+51 911-234-678</a></p>
-            <p>Website: <a href="https://www.trujillochamber.com" target="_blank">www.trujillochamber.com</a></p>
+            <p>Website: <a href="https://www.trujillochamber.com" target="_blank" rel="noopener noreferrer">www.trujillochamber.com</a></p>
         </div>
         <div id="currentyear" class="footer-section">
             <h4>WDD231 CHAMBER OF COMMERCE PROJECT</h4>
@@ -94,11 +99,10 @@
         <div class="footer-section">
             <h4>Follow Us:</h4>
             <ul class="social-links">
-                <li><a href="https://www.facebook.com/ChamberofCommerceDirectory" target="_blank">Facebook</a></li>
-                <li><a href="https://www.twitter.com/GauchoChamberofCommerceDirectory" target="_blank">Twitter</a></li>
-                <li><a href="https://www.linkedin.com/GauchoChamberofCommerceDirectory" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/ChamberofCommerceDirectory" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://www.twitter.com/GauchoChamberofCommerceDirectory" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/GauchoChamberofCommerceDirectory" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
         </div>
     </footer>
 </body>
-</html>

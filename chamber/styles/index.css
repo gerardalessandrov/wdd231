@@ -4,39 +4,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    display: flex;
-    background-color:#001F3F ;
-   
-    padding: 20px;
-    text-align: center;
-    height: 80px;
-   
-    
-   
+
+:root {
+    --primary-color: #001F3F;
+    --hover-color: #582B11;
+    --accent-color: #030027;
+    --background-light: #F0F4F8;
+    --background-dark: #FFE381;
+    --text-color: white;
+    --font-family: "Gowun Batang", system-ui;
 }
+
+/* Header styles */
+header {
+    display: flex;
+    background-color: var(--primary-color);
+    padding: 20px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+}
+
 li {
     list-style: none;
-    padding: 10px;
-    color: white;
+    color: var(--text-color);
 }
 
-.navigation a{
+.navigation a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
+    transition: color 0.3s;
 }
-.navigation{
-    display: flex;
-    position: absolute;
-    top:5px;
-    right:0px;
-    flex-wrap: wrap;
-    gap:40px;
 
-    width: 400px;
-    height: 70px;
-    justify-content: center;
-
+.navigation a:hover {
+    color: var(--hover-color);
 }
 
 /* Image styling for responsiveness */
@@ -47,63 +53,54 @@ img {
 
 /* Body styles */
 body {
-    font-family: "Gowun Batang", system-ui;
+    font-family: var(--font-family);
     font-weight: 400;
     color: black;
 }
 
 /* Heading styles */
 h1 {
-    font-family: "Gowun Batang", system-ui;
     font-weight: 300;
     font-size: 1.5rem;
     margin-left: 100px;
-    color: white; /* Consolidated color here */
+    color: var(--text-color);
 }
 
 h2 {
-    color: #030027;
+    color: var(--accent-color);
     text-align: center;
 }
 
 /* Header hover effect */
 header:hover {
-    background-color: #582B11;
+    background-color: var(--hover-color);
 }
 
-/* Positioning for the first image */
+/* Image and forecast section styling */
 .imagen1 {
     position: absolute;
     left: 10px;
 }
 
-/* Forecast section styling */
 #forecast {
-    background-color: #F0F4F8;
-    display: flex; 
-    flex-direction: row; 
-    align-items: flex-start; 
-    justify-content: center; 
-    flex-wrap: wrap; 
+    background-color: var(--background-light);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Forecast card styles */
 .forecast-card {
-    display: flex; 
-    flex-direction: column; 
     background-color: #FFF9C4;
-    margin: 10px; 
-    padding: 10px; 
-    border-radius: 5px; 
-    width: 150px; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
 }
 
 /* Button styles */
 .button {
-    position: absolute;
-    left: 45%;
-    bottom: 5%;
-    background-color: #030027;
+    background-color: var(--accent-color);
     text-decoration: none;
     width: 200px;
     height: 10vh;
@@ -111,7 +108,12 @@ header:hover {
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
-    color: white; /* Moved color here for clarity */
+    color: var(--text-color);
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
 }
 
 /* Business highlight section */
@@ -119,7 +121,6 @@ header:hover {
     justify-content: center;
     text-align: center;
     background-color: #DEE8D5;
-    color: black; 
     padding: 100px;
 }
 
@@ -131,40 +132,7 @@ header:hover {
     margin: 0 200px;
 }
 
-/* Events message styling */
-.events-msg {
-    margin-left: 50px;
-    text-align: center;
-}
-
-/* Business highlight positioning */
-#business-highlight {
-    width: 500px;
-    position: relative;
-    left: 280px;
-}
-
-/* Description styling */
-#description {
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Current event styling */
-#current-event {
-    font-size: 30px;
-}
-
 /* Content card styling */
-.content-cards {
-    display: flex; 
-    justify-content: center; 
-    height: 200px;
-    padding: 20px; 
-}
-
-/* Card styling */
 .card {
     display: flex;
     justify-content: center;
@@ -172,26 +140,22 @@ header:hover {
     height: 200px;
     padding: 20px;
     margin: 20px;
-    background-color: #fff; 
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    transition: all 0.3s ease; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Card hover effect */
 .card:hover {
-    color: yellow;
     background-color: #e0f7fa;
-    color: #00695c; 
-    transform: scale(1.05); 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Call to action button styling */
 .cta-button {
-    display: block;
-    align-items: center;
     position: absolute;
     top: 400px;
     left: 300px;
@@ -200,140 +164,60 @@ header:hover {
     padding: 30px;
 }
 
-/* Call to action button text color */
-.cta-button p {
-    color: white;
-}
-
 /* Event list styling */
 #events {
     width: 100%;
     text-align: center;
     margin-top: 80px;
     font-size: 26px;
-    background-color: #FFE381;
+    background-color: var(--background-dark);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Button styling for more/less events */
 #more-events, #less-events {
-    background-color: #582B11;
-    color: white;
+    background-color: var(--hover-color);
+    color: var(--text-color);
     padding: 20px;
     margin: 10px;
-    text-decoration: none;
     font-size: 15px;
 }
 
-/* Specific positioning for less events button */
-#less-events {
-    position: absolute;
-    left: 600px; /* Adjusted for spacing */
-}
-@media (max-width:400px) {
-  
-    body{
-        font-family: "Gowun Batang", system-ui;
-        font-weight: 400;
+/* Media Queries */
+@media (max-width: 400px) {
+    body {
         text-align: center;
-        
     }
-    nav{
-        display: flex;
-        
+    nav {
         padding: 20px;
         justify-content: center;
     }
-    .button{
-        position: absolute;
-        top:280px;
-        left:70px;
-        
+    .button {
+        top: 280px;
+        left: 70px;
     }
-    .cta-button  {
-        display: block;
-        font-size:6px;
-        align-items: center;
-        position: absolute;
+    .cta-button {
+        font-size: 6px;
         top: 90px;
         left: 40px;
-        background-color: rgb(146, 8, 8);
-        font-weight: bold;
-        padding: 20px;
         width: 320px;
         height: 200px;
     }
-    .cta-button h1 {
+    .cta-button h1, .cta-button p {
         font-size: 12px;
         text-align: center;
     }
-    .cta-button p {
-        font-size: 12px;
-    }
-    
-    #menu::before{
-        content: " ☰";
-        
-    }
-    #menu.show::before {
-        content: "X";
-      }
-      .active::before { 
-        content: "📍";  /* just a wayfinding symbol for the user */
-      }
-    #menu{
+    #menu {
         font-size: 1.45rem;
         position: absolute;
-        right:20px;
-        top:15px;
-       
+        right: 20px;
+        top: 15px;
     }
-    .events-msg {
-        margin-left: 10px;
-        text-align: center;
-    }
-    .navigation li{
+    .navigation li {
         display: none;
     }
-    .show li{
+    .show li {
         display: block;
     }
-    .navigation a {
-        display: flex;
-        padding: 2.3rem;
-        flex-wrap: wrap;
-        background-color:#A51A25 ;
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        
-      }
-      #card{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-      }
-      .tarjeta{
-        background-color:  #ECF0F1;
-        padding: 20px;
-        flex: 0 1 calc(33.33% - 10px);
-        margin: 10px;
-      }
-      footer {
-        display: block;
-        
-        margin-top: 10px;
-        height: 70px;
-        text-align: center;
-        color: black;
-      }
-      a{
-        text-decoration: none;
-        
-      }
-      ul{
-        list-style: none;
-      }
-    
 }

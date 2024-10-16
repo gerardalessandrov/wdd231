@@ -93,7 +93,7 @@
     grid-column: 6/7;
     border: black 1px solid;
   }
- 
+
   .course-card {
     border: 1px solid #ccc;
     padding: 10px;
@@ -108,14 +108,13 @@
   .contenedor3 {
     grid-row: 6/8;
     grid-column: 2/7;
-   
   }
   .titulo3 {
     background-color: black;
   }
- 
-  .active::before { 
-    content: "📍";  /* just a wayfinding symbol for the user */
+
+  .active::before {
+    content: "📍"; /* just a wayfinding symbol for the user */
   }
   .navigation a:hover {
     background-color: #bbb;
@@ -134,13 +133,11 @@
     margin: 0.25rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem 0.75rem;
-    
   }
- #Credits{
+  #Credits {
     background-color: white;
     grid-row: 8/8;
     grid-column: 1/7;
-    
   }
   .highlight {
     color: white;
@@ -149,20 +146,44 @@
   #menu {
     text-decoration: none;
   }
-  #subject{
+  #subject {
     background-color: #ccc;
     grid-row: 6/8;
     grid-column: 1/7;
-   
+
     text-align: center;
     padding: 15px;
     margin: 0;
   }
-  button{
+  button {
     width: 300px;
     height: 60px;
     background-color: #603c2f;
     color: white;
     margin-left: 30px;
+  }
+  dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+  }
+  dialog::backdrop {
+    background-color: #333;
+  }
+  dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  #closeModal {
+    background-color: none;
+    max-width: 10px;
+    max-height: 10px;
   }
 }
