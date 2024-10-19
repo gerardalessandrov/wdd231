@@ -24,10 +24,10 @@ open_button.addEventListener("click",()=>{
     profit_div.showModal();
 })
 const memberships=[
-   {title:"Non-Profit Membership Level",description:"Non Profit Level you can get new objects free"},
-   {title:"Bronze Membership Level",description:"Bronze Level you can get new objects free"},
-   {title:"Silver Membership Level",description:"Silver Level you can get new objects free"},
-   {title:"Gold Membership Level",description:"Gold Level you can get new objects free"},
+   {title:"Non-Profit Membership Level",description:"With this membership you can get items with an 30% discount"},
+   {title:"Bronze Membership Level",description:"With this membership you get items at 50% off"},
+   {title:"Silver Membership Level",description:"get a free $10 item and 75 percent off "},
+   {title:"Gold Membership Level",description:"With this membership you can get premium items at 80% off and participate in a drawing for a free trip"},
 ];
 
 console.log(memberships);
