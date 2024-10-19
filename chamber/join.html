@@ -28,7 +28,6 @@
   </head>
   <body>
     <header>
-     My chevere page
       <div class="logo">
         <img src="images/empanadas.webp" alt="emapanadas" width="120">
         <h1>Trujillo Chamber of Commerce</h1>
@@ -55,7 +54,7 @@
     </header>
     <section class="form-container">
       <h1>Join</h1>
-      <form id="form-html" action="submit/thankyou.html" method="get">
+      <form id="form-html" action="thankyou.html" method="GET">
         <h2>Membership Application Form</h2>
         <label for="first-name">First name</label>
         <input
@@ -66,6 +65,7 @@
           autocomplete="given-name"
           title="Ingresa tu nombre"
         >
+  <label for="last-name">Last name</label>
         <input
           type="text"
           id="last-name"
@@ -101,6 +101,7 @@
           title="Ingresa tu mobile phone number"
           required
         >
+        <label for="organization">Organization Name</label>
 
         <input
           type="text"
@@ -110,7 +111,7 @@
           title="Ingresa tu organization-name"
           required
         >
-        <label for="membership-level">Memebership Level</label>
+        <label for="membership-level">Membership Level</label>
         <select id="membership-level" name="membership-level">
           <option value="See" disabled selected>Select an option--</option>
           <option value="np">NP Membership</option>
