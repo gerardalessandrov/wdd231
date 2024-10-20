@@ -1,0 +1,31 @@
+:root {
+    --primary-color: #1D3557;  
+    --secondary-color: #457B9D;  
+    --background-color: #F1FAEE;  
+    --text-color: #333333;  
+    --font-size-base: 16px;   
+}
+body{
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+*{
+        margin: auto;
+        font-family: "Noto Sans Mayan Numerals", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+h1{
+    color:var(--secondary-color);
+}
+p{
+    background-color:rgb(247, 193, 123);
+    width: 400px;
+}
+h1,h2,h3{
+    text-align: center;
+    
+}
