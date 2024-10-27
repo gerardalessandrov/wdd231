@@ -142,7 +142,7 @@ li {
     text-decoration: none;
     color: var(--text-color);
     transition: color 0.3s;
-    font-size: 700;
+    font-size: 700px;
 }
 
 
