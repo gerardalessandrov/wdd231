@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discover Page</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    <script src="scripts/discover.js"defer></script>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Discover</h1>
+    <header>
+        <h1 class="title">Trujillo Chamber of Commerce</h1>
+        <img class="imagen1" src="images/cakeandmakeryimage.webp" alt="Delicious Peruvian empanadas" width="80" height="100">
+
+        <button id="menu" aria-label="Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html"><button  class="discover">Discover</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+    <h2 class="background">Welcome to our business community</h2>
+    <p id="local-storage"></p>
+    <h3 class="background">Local Bussiness Demographics</h3>
+    <ul >
+        <li class="black">Population:50,000</li>
+        <li class="black">Median Age:35 years</li>
+        <li class="black">Median Income:$60.000/year</li>
+        <li class="black">Employment Rate: 95%</li>
+    </ul>
+    <h2 class="background">Upcoming Events</h2>
+    <h2 class="background">Business Networking expo</h2>
+    <p>Date:20/10/2024</p>
+    <p>Join us for a day of networking with local businesses and entrepreneurs.</p>
+    <button>Learn More</button>
+    <h2 class="background">Small Bussiness Workshop</h2>
+    <p>Date:26/10/2024</p>
+    <p>Learn tips and strategies for growing your</p>
+    <p>Join us for a day of networking with local businesses and entrepreneurs.</p>
+    <button>Learn More</button>
+    <h2 class="background">Holiday Market</h2>
+    <p>Date:31/10/2024</p>
+    <p>Shop for holiday gifts and support local businesses at the Holiday Market!</p>
+    <p>Join us for a day of networking with local businesses and entrepreneurs.</p>
+    <button>Learn More</button>
+    <h2 class="background">Calendar</h2>
+    
+   
+    </aside>
+   <main>
+    
+    <h1 class="picture">Explore Local Atractions</h1>
+    <div class="image-grid">
+    <figure>
+        <img src="images/festival.jpg" loading="lazy"class="gallery-img" alt="festival-img">
+        <figcaption>
+            Community Festival: Celebrate with local businesses and artisans.
+            </figcaption>
+    </figure>
+   
+    <figure>
+        <img src="images/Machu_Picchu,_Peru_(2018).jpg" alt="machu-picchu" loading="lazy"class="gallery-img">
+        <figcaption>
+            Historic Downtown Tour: Discover our rich heritage.
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="images/ganado.jpg" alt="ganado-image" loading="lazy"class="gallery-img">
+        <figcaption>
+            Artisan Marketplace: Showcasing local talent and handmade goods.
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="images/artesania.jpg" alt="artesania-image" loading="lazy"class="gallery-img">
+        <figcaption>
+            Farmers Market: Fresh produce and goods from local farms.
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="images/exposicion.jpg" alt="exposicion-image" loading="lazy"class="gallery-img">
+        <figcaption>
+            Business Expo: Network with industry leaders and expand connections.
+        </figcaption>
+    </figure>
+    <figure>
+        <img src="images/concierto.jpg" alt="concierto-image" loading="lazy" class="gallery-img">
+        <figcaption>
+            Outdoor Concert: Enjoy live music from local bands.
+        </figcaption>
+    </figure>
+   
+</div>
+   </main>
+
+
+<footer id="currentyear">
+    <span class="color" id="year"></span>
+    <br />
+    <span class="color" id="short"></span>
+  </footer>
+
+
+
 </body>
 </html>
