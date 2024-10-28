@@ -1,0 +1,190 @@
+@media (min-width: 500px) {
+    body {
+      font-family: "Gowun Batang", system-ui;
+      font-weight: 400;
+      width: 1000px;
+      padding: 0 100px 0 100px;
+    }
+    #menu {
+      display: none;
+    }
+    header {
+      background: #474044;
+    }
+    .gerard {
+      display: flex;
+      padding-left: 300px;
+    }
+    h1 {
+      color: white;
+      font-weight: 100;
+      text-align: center;
+    }
+  
+    li a:hover {
+      color: yellow;
+    }
+    .navigation {
+      font-weight: 100;
+      font-style: normal;
+      display: flex;
+      height: 50px;
+      align-items: center;
+      background: black;
+      justify-content: space-around;
+    }
+  
+    nav a {
+      color: white;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: 10px 200px 200px 290px 30px;
+      grid-template-rows: 30px 50px 50px 50px 350px;
+      max-width: 1000px;
+      position: initial;
+    }
+  
+    .card1 {
+      grid-row: 2/6;
+      grid-column: 2/5;
+      background: #eff2f1;
+      border: black 1px solid;
+    }
+    #menu:hover {
+      background-color: white;
+    }
+    h2 {
+      border: black 1px solid;
+      height: 50px;
+      margin: 0;
+      border-radius: 3px;
+      background: #603c2f;
+      color: white;
+      text-align: center;
+      font-weight: 100;
+      font-style: normal;
+    }
+  
+    img.img1 {
+      float: right;
+      margin-right: 25px;
+      margin-top: -120px;
+    }
+  
+    img.img2 {
+      float: right;
+      margin-right: 25px;
+      margin-top: -150px;
+    }
+  
+    .contenedor {
+      width: 200px;
+      margin-left: 30px;
+    }
+  
+    .contenedor2 {
+      text-align: center;
+    }
+  
+    .card2 {
+      grid-row: 2/6;
+      grid-column: 6/7;
+      border: black 1px solid;
+    }
+  
+    .course-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+  
+    .completed {
+      background-color: lightgreen; /* Style for completed courses */
+      border: 2px solid green;
+    }
+    .contenedor3 {
+      grid-row: 6/8;
+      grid-column: 2/7;
+    }
+    .titulo3 {
+      background-color: black;
+    }
+  
+    .active::before {
+      content: "📍"; /* just a wayfinding symbol for the user */
+    }
+    .navigation a:hover {
+      background-color: #bbb;
+      color: #333;
+      font-weight: 700;
+    }
+    footer {
+      background: #474044;
+      margin-top: 10px;
+      height: 70px;
+      text-align: center;
+      color: white;
+    }
+  
+    .color p {
+      margin: 0.25rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0.5rem 0.75rem;
+    }
+    #Credits {
+      background-color: white;
+      grid-row: 8/8;
+      grid-column: 1/7;
+    }
+    .highlight {
+      color: white;
+      font-weight: 700;
+    }
+    #menu {
+      text-decoration: none;
+    }
+    #subject {
+      background-color: #ccc;
+      grid-row: 6/8;
+      grid-column: 1/7;
+  
+      text-align: center;
+      padding: 15px;
+      margin: 0;
+    }
+    button {
+      width: 300px;
+      height: 60px;
+      background-color: #603c2f;
+      color: white;
+      margin-left: 30px;
+    }
+    dialog {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.25rem;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 0 3rem #777;
+      width: 90%;
+      max-width: 600px;
+    }
+    dialog::backdrop {
+      background-color: #333;
+    }
+    dialog button {
+      position: absolute;
+      top: 23px;
+      right: 23px;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    #closeModal {
+      background-color: none;
+      max-width: 10px;
+      max-height: 10px;
+    }
+  }
+  
