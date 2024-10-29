@@ -1,0 +1,61 @@
+@media (max-width: 500px) {
+  body {
+      font-family: "Gowun Batang", system-ui;
+      font-weight: 400;
+      width: 100%;
+      padding: 0;
+      margin: 10px;
+      display: block;
+      text-align: center;
+  }
+ 
+  .hero{
+    display: none;}
+
+  #menu::before {
+      content: "☰";
+  }
+  #menu.show::before {
+      content: "X";
+  }
+  .navigation {
+      display: none; /* Oculto por defecto */
+      flex-direction: column; /* Apila verticalmente */
+      list-style: none;
+      position: absolute;
+      top: 6rem;
+      left: 10px;
+      text-align: center;
+      background-color: black;
+      width: 100%;
+     
+  }
+  .card{
+    margin-top: 47rem;
+  }
+  .show {
+      display: flex; /* Muestra en columna cuando se activa */
+    
+  }
+  .navigation li {
+      display: block; /* Asegúrate de que cada ítem sea un bloque */
+ 
+  }
+  .navigation a {
+      padding: 10px 10px; /* Espaciado interno */
+      cursor:pointer;
+      background-color: black;
+      color: white;
+      height:150px;
+      text-decoration: none; /* Sin subrayado */
+      display: block; /* Cada enlace ocupa todo el ancho */
+  }
+  #menu {
+      color: black;
+      margin-top: 20px;
+      margin-left: 300px;
+      position: absolute;
+      text-decoration: none;
+      font-size: 1.75rem;
+  }
+}

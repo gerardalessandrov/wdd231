@@ -6,8 +6,8 @@
     --background-light: #F0F4F8;
     --background-dark: #FFE381;
     --text-color: white;
-    --font-family:  "Nunito",sanserif;
-    --font-size:20px;
+    --font-family:   "Lora", serif;
+    --font-size:15px;
 
 }
 * {
@@ -17,97 +17,45 @@
     font-family: var(--font-family);
     font-size: var(--font-size);
 }
-body{
-    min-height: 100vh;
-    background-color: #fff59d;
-    display: grid;
-    grid-template-columns: 300px 1fr ;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: "navbar navbar "
-    "sidebar main"
-    "footer footer";
+ #description{
+    text-transform:capitalize;
+}
+p #forecast{
+    text-transform:capitalize;
 }
 
-aside{
-    grid-area: sidebar;
-    text-align: center;
-}
-main{
-    grid-area: main;
-    background-color: #D0F4DE;
-  
-}
-.picture{
-    color: green;
-    text-align: center;
-    font-weight: bold;
-}
-.image-grid{
-    width:90%;
-    max-width:1100px ;
-    margin:40px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-}
-.image-grid img{
-    height: 60%;
-}
-figure{
-    margin: 50px;
 
-}
-figure img:hover{
-    transform: scale(1.2);
+
+
+  .active:hover{
+    background-color: white;
     border-radius: 10px;
-    cursor: pointer;
-}
-img{
-    width:100%;
-  object-fit:cover;
+    transition: all 2s;
+  }
+  #icon{
+    width:100px;
   }
 footer{
     grid-area: footer;
-    background-color: #582B11;
+    background-color: whitesmoke;
+    text-align: center;
 }
-.black{
-    color: black;
-}
-.background{
-    background-color: #001F3F;
-    color: white;
+footer a{
+    text-decoration: none;
+    list-style: none;
+    color: #001F3F;
 }
 
-.sidebar{
-    grid-area: sidebar;
-    background-color:white;
-    color:black;
-    padding:20px;
-    border:black solid 3px;
-    }
-.container{
-    display: grid;
-    grid-template-rows: 60px 1fr 40px; /* Header, Content, Footer */
-    grid-template-columns: 250px 1fr; /* Sidebar, Main Content */
-    grid-template-areas: 
-      "header header"
-      "sidebar main-content"
-      "footer footer";
-    height: 100vh;
-    width: 90%;
-    max-width: 1200px;
-    gap: 10px;
-}
-.graphics{
-   background-color: #001F3F;
-   margin:10px;
-   height:100px;
-}
+
+
+
+
 /* Header styles */
 header {
-    grid-area: navbar;
+
     display: flex;
     background-color: var(--primary-color);
-    padding: 5px 10px;
+
     height: 80px;
     justify-content: space-between;
     align-items: center;
@@ -142,32 +90,33 @@ li {
     text-decoration: none;
     color: var(--text-color);
     transition: color 0.3s;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
 
 /* Image styling for responsiveness */
-img {
-    max-width: 100%;
-    height: auto;
-}
 
+.big-image{
+    padding-left: 60px;
+}
 /* Body styles */
 body {
     font-family: var(--font-family);
     font-weight: 400;
-    color: black;
+    width: 100%;;
 }
 
 /* Heading styles */
 h1 {
     font-weight: 300;
     font-size: 1.5rem;
-    margin-left: 100px;
+
     color: var(--text-color);
 }
-
+.title{
+    margin-left: 100px;
+}
 h2 {
     color: var(--accent-color);
     text-align: center;
@@ -235,13 +184,13 @@ header nav li a:hover{
 }
 
 /* Content card styling */
-.card {
+.card{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     padding: 20px;
-    margin: 20px;
+
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -273,14 +222,33 @@ header nav li a:hover{
 
 /* Call to action button styling */
 .cta-button {
-    position: absolute;
-    top: 400px;
-    left: 300px;
-    background-color: rgb(146, 8, 8);
+    width: 300px;
+    height: 200px;
+    background-color:#0D324D;
     font-weight: bold;
-    padding: 30px;
+    position: absolute;
+    left:450px;
+    bottom: 100px;
+    border-radius: 10px;
+    color:#e2f1f8;
+   
 }
+.cta-button:hover{
+    transition: ease 2s;
+   transform: scale(1.2);
+   background-color: #F49E4C;
+   font-style:italic;
+}
+    .button {
+        position: absolute;
+        left:500px;
+        bottom: 100px;
 
+    }
+    .button:hover{
+        transition: ease 2s;
+        transform: scale(1.2);
+    }
 /* Event list styling */
 #events {
     width: 100%;
@@ -301,43 +269,4 @@ header nav li a:hover{
     font-size: 15px;
 }
 
-/* Media Queries */
-@media (max-width: 500px) {
-    body {
-        text-align: center;
-        display: block;
-        font-size: 8px;
-    }
-    nav {
-        padding: 20px;
-        justify-content: center;
-    }
-    .button {
-        top: 280px;
-        left: 70px;
-    }
-    .cta-button {
-        font-size: 6px;
-        top: 90px;
-        left: 40px;
-        width: 320px;
-        height: 200px;
-    }
-    .cta-button h1, .cta-button p {
-        font-size: 12px;
-        text-align: center;
-    }
-    #menu {
-        font-size: 1.45rem;
-        position: absolute;
-        right: 20px;
-        top: 15px;
-    }
-    .navigation li {
-        display: none;
-    }
-    .show li {
-        display: block;
-    }
-   
-}
+

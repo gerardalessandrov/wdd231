@@ -1,0 +1,59 @@
+
+[
+    {
+        "name": "World Surf League",
+        "address": "Lexus,US",
+        "phone": "231623123",
+        "website": "https://worldsurf.com/",
+        "image": "https://th.bing.com/th/id/OIP.sx9d7dz6pewAafieKhAowAAAAA?rs=1&pid=ImgDetMain",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Buy your surfboard",
+        "address": "Chicago,avenue 3,1st street",  
+        "phone": "612800099",
+        "website": "https://www.buyinline.com.pe/",
+        "image": "https://th.bing.com/th/id/OIP.eH5RK6vxFeCN4LbzeYhT7gHaE8?rs=1&pid=ImgDetMain",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Oahu Surfing school",
+        "address": "Street 2 Kentucky ,Ohio",
+        "phone": "213973380586",
+        "website": "https://OahuSurfing581306352.wordpress.com/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUYznt47VM_ssm8l0gycNHqxa7SA_oNxCBXw&s",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Learn to surf",
+        "address": "New York beach",
+        "phone": "5051111",
+        "website": "https://www.surfinginnewyork.com.pe/",
+        "image": "https://th.bing.com/th/id/R.ebc2fb63a870c714299acff30ac969a0?rik=uZf497NVZ4mXmA&pid=ImgRaw&r=0",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Surfing with John",
+        "address": "VXX2+363, Idaho 23 ",
+        "phone": "5055000",
+        "website": "https://www.SurfingithJohn.pe/ecommerce",
+        "image": "https://th.bing.com/th/id/OIP.fUai2x5iIY7fU1ZaSw_VHwHaEK?rs=1&pid=ImgDetMain",
+        "membershipLevel": "Silver"
+    },
+    {
+        "name": "Hawai Party",
+        "address": "GIGANTIC Local ,New York",
+        "phone": "5050505",
+        "website": "https://www.partieshawai.com.pe/",
+        "image": "https://th.bing.com/th/id/OIP.7OM3qgUVGcxnTrPtwnoC6AHaD7?rs=1&pid=ImgDetMain",
+        "membershipLevel": "Gold"
+    },
+    {
+        "name": "Champions League Surfing",
+        "address": "Miami ,Inter,beach",
+        "phone": "12342345",
+        "website": "https://www.surferschampions.com.pe/",
+        "image":"https://th.bing.com/th/id/OIP.dAq9M5BmsWAzjWrrY3v3jgHaHa?rs=1&pid=ImgDetMain",
+        "membershipLevel": "Silver"
+    }
+]

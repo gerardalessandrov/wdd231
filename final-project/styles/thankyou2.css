@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  header h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-data {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+  
+  .form-data p {
+    font-size: 1.1em;
+    margin: 5px 0;
+  }
+  
+  a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

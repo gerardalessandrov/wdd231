@@ -1,0 +1,43 @@
+<!-- thankyou.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="styles/thankyou2.css">
+  <link rel="icon" href="images/favicon(1).ico">
+</head>
+<body>
+  <header>
+    <h1>Thank You for Registering!</h1>
+  </header>
+
+  <main>
+    <p>We appreciate you taking the time to fill out the form. Below is the information you provided:</p>
+
+    <div class="form-data">
+      <p><strong>First Name:</strong> <span id="first-name"></span></p>
+      <p><strong>Last Name:</strong> <span id="last-name"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Mobile Number:</strong> <span id="mobile"></span></p>
+      <p><strong>Business Name:</strong> <span id="business-name"></span></p>
+      <p><strong>Submitted On:</strong> <span id="timestamp"></span></p>
+    </div>
+
+    <a href="joinus.html">Go Back to Form</a>
+  </main>
+
+  <!-- Mueve el script aquí para asegurar que el DOM esté listo -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+
+    document.getElementById('first-name').textContent = urlParams.get('first-name');
+    document.getElementById('last-name').textContent = urlParams.get('last-name');
+    document.getElementById('email').textContent = urlParams.get('email-address');
+    document.getElementById('mobile').textContent = urlParams.get('phone-number');
+    document.getElementById('business-name').textContent = urlParams.get("organization-name");
+    document.getElementById('timestamp').textContent = urlParams.get('timestamp');
+  </script>
+</body>
+</html>
